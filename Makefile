@@ -2,16 +2,21 @@ NAME	= libftprintf.a
 
 CFLAGS	= -Wall -Wextra -Werror
 
-C_SRC	= *.c
-C_OBJ	= $(C_SRC:.c=.o)
+SRC	= *.c
+OBJ	= $(SRC:.c=.o)
+
+RM = rm -rf
 
 all: $(NAME)
 
-$(NAME): $(OBJS)
-	ar rc $(NAME) $(OBJS)
+$(NAME): $(OBJ)
+	ar rc $(NAME) $(OBJ)
+
+$(OBJ): $(SRC)
+	cc $(FLAG) -c $(SRC)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJ)
 
 fclean: clean
 	$(RM) $(NAME)

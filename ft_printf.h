@@ -6,7 +6,7 @@
 /*   By: cmoura-p <cmoura-p@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/09 18:42:39 by cmoura-p          #+#    #+#             */
-/*   Updated: 2023/11/10 21:47:38 by cmoura-p         ###   ########.fr       */
+/*   Updated: 2023/11/11 16:19:05 by cmoura-p         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,7 @@ int		ft_check_format(char datatype, va_list ap);
 int		ft_print_char(int c);
 int		ft_print_str(char *str);
 int		ft_print_num(long n, char *base, char datatype);
-int     ft_print_ptr(size_t n, char *base);
-int		ft_putnbr_base(long n, char *base);
-int		ft_putunsnbr_base(unsigned long n, char *base);
+int		ft_print_ptr(size_t n, char *base);
 size_t	ft_strlen(const char *str);
 
 #endif
